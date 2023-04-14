@@ -12,3 +12,7 @@ def home(request):
         movies = Movie.objects.all()
 
     return render(request,'home.html',{'searchTerm':searchTerm, 'movies':movies})
+
+def teatro(request):
+    teatros = Teatro.objects.all()
+    return render(request,'teatros.html',{'teatros':teatros})

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'movie',
     'news',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
     'moviereviews/static/',
 ]
+
+LOGIN_URL = 'loginaccount'
